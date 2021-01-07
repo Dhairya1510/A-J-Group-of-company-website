@@ -40,6 +40,10 @@ export const Nav = styled.nav`
     text-decoration: none;
   `;
   
+  export const Clogo = styled.img `
+     height: 100%;
+  `;
+
   export const MobileIcon = styled.div`
   display: none;
 
@@ -78,7 +82,9 @@ export const Nav = styled.nav`
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  width: fit-content;
   cursor: pointer;
+  white-space: pre-wrap;
 
   &.active {
     border-bottom: 3px solid #01bf71;

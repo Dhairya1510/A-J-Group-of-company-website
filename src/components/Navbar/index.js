@@ -4,7 +4,11 @@ import {IconContext} from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll';
 import {Nav, NavbarContainer, NavLogo,
    MobileIcon,NavMenu, 
-   NavItem, NavLinks, NavBtn , NavBtnLink} from './NavbarElements'
+   NavItem, NavLinks, NavBtn , NavBtnLink,
+    Clogo
+  } from './NavbarElements'
+
+   import logo1 from '../../images/logo1.png'
 
 const Navbar = ({ toggle }) => {
  const [scrollNav,setScrollNav] = useState(false)
@@ -32,7 +36,7 @@ const Navbar = ({ toggle }) => {
     <Nav scrollNav={scrollNav}>
       <NavbarContainer>
         <NavLogo to='/' onClick={toggleHome}>
-          AJGOC
+          <Clogo src={logo1} alt="AJ Group of Company" />
         </NavLogo>
         <MobileIcon onClick={toggle}>
         <FaBars />
@@ -57,7 +61,7 @@ const Navbar = ({ toggle }) => {
               >Discover</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services"
+              <NavLinks to="Services"
                 smooth={true}
               duration={500}
               spy={true}
@@ -65,7 +69,43 @@ const Navbar = ({ toggle }) => {
               offset={-80}
               >Services</NavLinks>
             </NavItem>
-            <NavItem>
+             <NavItem>
+              <NavLinks to="services"
+                smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              >What we do</NavLinks>
+            </NavItem>
+             <NavItem>
+              <NavLinks to="Features"
+                smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              >Features</NavLinks>
+            </NavItem>
+             <NavItem>
+              <NavLinks to="Teams"
+                smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              >Teams</NavLinks>
+            </NavItem>
+             <NavItem>
+              <NavLinks to="Contact Us"
+                smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              >ContactUs</NavLinks>
+            </NavItem>
+            {/* <NavItem>
               <NavLinks to="signup"
                 smooth={true}
               duration={500}
@@ -73,11 +113,11 @@ const Navbar = ({ toggle }) => {
               exact='true'
               offset={-80}
               >Sign Up</NavLinks>
-            </NavItem>
+            </NavItem> */}
           </NavMenu>
-          <NavBtn>
+          {/* <NavBtn>
           <NavBtnLink to="/signin">Sign In</NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
       </NavbarContainer>
     </Nav>
     </IconContext.Provider>
