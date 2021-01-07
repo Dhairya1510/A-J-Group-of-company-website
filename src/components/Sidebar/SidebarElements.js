@@ -23,7 +23,7 @@ color: #fff;
 `;
 
 export const Icon = styled.div `
-position: absolute
+position: absolute;
 top: 1.2rem;
 right: 1.5rem;
 background: transparent;
@@ -39,7 +39,7 @@ color: #fff;
 export const SidebarMenu = styled.ul `
 display: grid;
 grid-template-columns: 1fr;
-grid-template-row: repeat(6 , 80px);
+grid-template-rows: repeat(6 , 80px);
 text-align: center;
 
 @media screen and (max-width:480px)
@@ -70,7 +70,7 @@ display: flex;
 justify-content: center;
 `
 export const SidebarRoute = styled(LinkRouter) `
-border=radius: 50px;
+border-radius: 50px;
 background: #01bf71;
 white-space: nowrap;
 padding: 16px 64px;
