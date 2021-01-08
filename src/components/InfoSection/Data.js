@@ -37,9 +37,9 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
   id: 'Features',
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: 'Home Automation',
   headline: 'Home Automation',
   description: `Home Automation is a type of automation which makes your home smart and secure. So you have to do less physical work.
@@ -48,9 +48,9 @@ We are providing you some automations work like controlling lights, fans, AC and
   imgStart: true,
   img: logo3,
   alt: 'Papperd',
-  dark: false,
-  primary: false,
-  darkText: true
+  dark: true,
+  primary: true,
+  darkText: false
 }
 
 export const homeObjFour = {
@@ -58,7 +58,7 @@ export const homeObjFour = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Home Automation',
+  topLine: 'Installation',
   headline: 'Installation',
   description: ` Installation is a very lengthy and hard process for common people who wants to get licensed software or OS for free. We are providing the same.
 

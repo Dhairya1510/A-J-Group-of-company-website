@@ -4,10 +4,10 @@ import {IconContext} from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll';
 import {Nav, NavbarContainer, NavLogo,
    MobileIcon,NavMenu, 
-   NavItem, NavLinks, NavBtn , NavBtnLink,
+   NavItem, NavLinks, 
     Clogo
   } from './NavbarElements'
-
+//NavBtn , NavBtnLink, for sigup button
    import logo1 from '../../images/logo1.png'
 
 const Navbar = ({ toggle }) => {
