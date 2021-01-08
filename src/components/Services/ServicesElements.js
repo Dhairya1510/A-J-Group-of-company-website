@@ -9,11 +9,11 @@ align-items: center;
 background: #010606;
 
 @media screen and (max-width: 768px) {
-  height: 1100px;
+  height: 2100px;
 }
 
 @media screen and (max-width: 480px) {
-  height: 1300;
+  height: 2300;
 }
 `
 
@@ -35,6 +35,7 @@ padding: 0 50px;
   padding: 0 20px;
 }
 `
+//
 
 export const ServicesCard = styled.div `
 background: #fff;
